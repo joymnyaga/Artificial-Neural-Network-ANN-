@@ -62,6 +62,7 @@ from sklearn.neural_network import MLPClassifier
 mlp=MLPClassifier(hidden_layer_sizes=(15,10,5))
 mlp.fit(x_train,y_train)
 
+#Make predictions
 pred=mlp.predict(x_test)
 
 #Evaluate accuracy of model
