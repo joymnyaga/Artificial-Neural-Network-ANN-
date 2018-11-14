@@ -57,7 +57,7 @@ sc=StandardScaler()
 x_train=sc.fit_transform(x_train)
 x_test=sc.transform(x_test)
 
-#Train model
+#Neural network
 from sklearn.neural_network import MLPClassifier
 mlp=MLPClassifier(hidden_layer_sizes=(15,10,5))
 mlp.fit(x_train,y_train)
